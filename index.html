@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AquaEdge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #2563eb, #4f46e5);
+            --text-color: #e2e8f0;
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.95);
+            --blur-effect: blur(10px);
+            --content-width: 65ch;
+        }
+
+        body {
+            background: var(--bg-color);
+            background-image: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.05) 0%, transparent 100%);
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: min(90%, 800px);
+            margin: 2rem auto;
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            backdrop-filter: var(--blur-effect);
+            -webkit-backdrop-filter: var(--blur-effect);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* Typography improvements */
+        h2 {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+
+        h3, h4 {
+            color: #fff;
+            font-weight: 500;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+
+        p {
+            font-size: 1rem;
+            max-width: var(--content-width);
+            margin: 0 auto 1.5rem;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+
+        /* Button improvements */
+        .btn-group {
+            margin: 1rem 0 3rem;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn-outline-primary {
+            background: rgba(37, 99, 235, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-color);
+            padding: 0.7rem 2rem;
+            border-radius: 0.75rem;
+            transition: all 0.2s ease;
+            font-size: 0.95rem;
+        }
+
+        .btn-outline-primary:hover,
+        .btn-outline-primary.active {
+            background: var(--primary-gradient);
+            border-color: transparent;
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        /* List improvements */
+        ul {
+            max-width: var(--content-width);
+            margin: 0 auto 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            opacity: 0.9;
+        }
+
+        /* Divider */
+        hr {
+            border: none;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 2.5rem 0;
+        }
+
+        /* Responsive improvements */
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+                padding: 1.5rem;
+                border-radius: 0;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+            }
+
+            h4 {
+                font-size: 1.1rem;
+            }
+
+            p, li {
+                font-size: 0.95rem;
+            }
+        }
+
+        /* RTL Support */
+        [dir="rtl"] {
+            text-align: right;
+        }
+
+        [dir="rtl"] ul {
+            padding-right: 1.5rem;
+            padding-left: 0;
+        }
+
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-color);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Selection */
+        ::selection {
+            background: rgba(37, 99, 235, 0.2);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+            <div class="btn-group" role="group" aria-label="Language selector">
+                <a href="?lang=en" class="btn btn-outline-primary">English</a>
+                <a href="?lang=fr" class="btn btn-outline-primary">Français</a>
+                <a href="?lang=ar" class="btn btn-outline-primary">العربية</a>
+            </div>
+        </div>
+        <h2 class="text-center">Privacy Policy - AquaEdge</h2>
+        <hr>
+        <div id="policy-content"></div>
+    </div>
+
+    <script>
+        const policies = {
+            en: `
+                <h3>Privacy Policy</h3>
+                <p>AgriEdge built the AquaEdge app. This SERVICE is provided by AgriEdge and is intended for use as is.</p>
+                
+                <p>This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.</p>
+                
+                <p>If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.</p>
+                
+                <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at AquaEdge unless otherwise defined in this Privacy Policy.</p>
+                
+                <h4>Information Collection and Use</h4>
+                <p>For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information, including but not limited to AgriEdge. The information that I request will be retained on your device and is not collected by me in any way.</p>
+                
+                <h4>Log Data</h4>
+                <p>I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol ("IP") address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.</p>
+                
+                <h4>Cookies</h4>
+                <p>Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.</p>
+                <p>This Service does not use these "cookies" explicitly. However, the app may use third party code and libraries that use "cookies" to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.</p>
+                
+                <h4>Service Providers</h4>
+                <p>We may employ third-party companies and individuals to facilitate our Service.</p>
+                
+                <h4>Security</h4>
+                <p>We value your trust in providing us your Personal Information, thus we strive to use commercially acceptable means of protecting it.</p>
+                <h4>Children's Privacy</h4>
+                <p>These Services do not address anyone under the age of 13.</p>
+                <h4>Changes to This Privacy Policy</h4>
+                <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes.</p>
+                <h4>Contact Us</h4>
+                <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at Contact@agriedge.ma</p>
+            `,
+            fr: `
+                <h3>Politique de Confidentialité</h3>
+                <p>AgriEdge a développé l'application AquaEdge. Ce SERVICE est fourni par AgriEdge et est destiné à être utilisé en l'état.</p>
+                
+                <p>Cette page a pour but d'informer les utilisateurs de nos politiques concernant la collecte, l'utilisation et la divulgation des informations personnelles si vous choisissez d'utiliser notre Service.</p>
+                
+                <p>En utilisant notre Service, vous acceptez la collecte et l'utilisation des informations conformément à cette politique. Les informations personnelles collectées sont utilisées pour fournir et améliorer le Service. Nous ne partageons ni n'utilisons vos informations autrement que dans le cadre décrit dans cette Politique de Confidentialité.</p>
+                
+                <p>Les termes utilisés dans cette Politique de Confidentialité ont la même signification que ceux de nos Conditions Générales d'Utilisation, accessibles dans l'application AquaEdge, sauf indication contraire dans cette Politique de Confidentialité.</p>
+                
+                <h4>Collecte et utilisation des informations</h4>
+                <p>Pour offrir une meilleure expérience aux utilisateurs, nous pouvons vous demander de fournir certaines informations personnelles, y compris, mais sans s'y limiter, des données liées à AgriEdge. Ces informations sont stockées sur votre appareil et ne sont en aucun cas collectées par nos services.</p>
+                
+                <h4>Données de journal (Log Data)</h4>
+                <p>Nous souhaitons informer les utilisateurs que, en cas d'erreur dans l'application, nous collectons des données et informations sur votre téléphone via des services tiers, appelées données de journal (Log Data). Ces données peuvent inclure :</p>
+                <ul>
+                    <li>Votre adresse IP,</li>
+                    <li>Le nom de votre appareil,</li>
+                    <li>La version du système d'exploitation,</li>
+                    <li>La configuration de l'application lors de l'utilisation de notre Service,</li>
+                    <li>L'heure et la date de votre utilisation,</li>
+                    <li>Autres statistiques.</li>
+                </ul>
+                
+                <h4>Cookies</h4>
+                <p>Les cookies sont de petits fichiers contenant une quantité limitée de données, souvent utilisés comme identifiants anonymes. Ils sont envoyés à votre navigateur par les sites Web que vous visitez et stockés dans la mémoire interne de votre appareil.</p>
+                <p>Notre Service n'utilise pas directement ces "cookies". Cependant, l'application peut intégrer des services tiers qui utilisent des "cookies" pour collecter des informations et améliorer leurs services. Vous avez la possibilité d'accepter ou de refuser ces cookies. Toutefois, si vous choisissez de les refuser, certaines fonctionnalités du Service pourraient être limitées.</p>
+                
+                <h4>Prestataires de services tiers</h4>
+                <p>Nous pouvons faire appel à des sociétés et individus tiers pour les raisons suivantes :</p>
+                <ul>
+                    <li>Faciliter notre Service,</li>
+                    <li>Fournir le Service en notre nom,</li>
+                    <li>Effectuer des services liés au Service,</li>
+                    <li>Analyser l'utilisation de notre Service.</li>
+                </ul>
+                <p>Ces tiers peuvent avoir accès à vos informations personnelles uniquement pour exécuter ces tâches en notre nom et sont tenus de ne pas les divulguer ni les utiliser à d'autres fins.</p>
+                
+                <h4>Sécurité</h4>
+                <p>Nous accordons une grande importance à la protection de vos données personnelles et nous mettons en œuvre des moyens commercialement acceptables pour les protéger. Cependant, aucune méthode de transmission sur Internet ni aucun stockage électronique n'est totalement sécurisé. Nous ne pouvons donc pas garantir une sécurité absolue.</p>
+                
+                <h4>Protection des enfants</h4>
+                <p>Notre Service ne s'adresse pas aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants de moins de 13 ans. Si nous découvrons qu'un enfant de moins de 13 ans nous a fourni des informations personnelles, nous les supprimerons immédiatement de nos serveurs.</p>
+                
+                <h4>Modifications de cette Politique de Confidentialité</h4>
+                <p>Nous pouvons mettre à jour cette Politique de Confidentialité à tout moment. Nous vous recommandons de consulter cette page régulièrement pour prendre connaissance des éventuels changements. Toute modification sera publiée sur cette page.</p>
+                
+                <h4>Contact</h4>
+                <p>Si vous avez des questions ou des suggestions concernant notre Politique de Confidentialité, n'hésitez pas à nous contacter : 📧 Email : Contact@agriedge.ma</p>
+            `,
+            ar: `
+                <h3>سياسة الخصوصية لـ AquaEdge</h3>
+                <p>طوّرت AgriEdge تطبيق AquaEdge. يتم توفير هذه الخدمة من قبل AgriEdge وهي مخصصة للاستخدام كما هي.</p>
+                
+                <p>تهدف هذه الصفحة إلى إبلاغ المستخدمين بسياساتنا المتعلقة بجمع المعلومات الشخصية واستخدامها والإفصاح عنها عند اختيارك لاستخدام خدمتنا.</p>
+                
+                <p>باستخدامك لخدمتنا، فإنك توافق على جمع واستخدام المعلومات وفقًا لهذه السياسة. تُستخدم المعلومات الشخصية التي يتم جمعها لتقديم الخدمة وتحسينها. نحن لا نشارك معلوماتك الشخصية أو نستخدمها إلا وفقًا لما هو موضح في هذه سياسة الخصوصية.</p>
+                
+                <p>تُستخدم المصطلحات الواردة في هذه السياسة بنفس المعاني الواردة في الشروط العامة للاستخدام الخاصة بنا، والمتاحة داخل التطبيق ما لم يُذكر خلاف ذلك.</p>
+                
+                <h4>جمع المعلومات واستخدامها</h4>
+                <p>لتقديم تجربة مستخدم أفضل، قد نطلب منك تقديم بعض المعلومات الشخصية، بما في ذلك على سبيل المثال لا الحصر، البيانات المتعلقة بـ AgriEdge. يتم تخزين هذه المعلومات على جهازك ولا يتم جمعها من قبل خدماتنا بأي شكل من الأشكال.</p>
+                
+                <h4>بيانات السجل</h4>
+                <p>نودّ إبلاغ المستخدمين أنه في حالة حدوث خطأ في التطبيق، نقوم بجمع بيانات ومعلومات معينة من هاتفك عبر خدمات طرف ثالث، تُعرف باسم بيانات السجل (Log Data). قد تتضمن هذه البيانات:</p>
+                <ul>
+                    <li>عنوان IP الخاص بك</li>
+                    <li>اسم جهازك</li>
+                    <li>إصدار نظام التشغيل</li>
+                    <li>إعدادات التطبيق أثناء استخدام الخدمة</li>
+                    <li>وقت وتاريخ استخدامك للخدمة</li>
+                    <li>إحصائيات أخرى</li>
+                </ul>
+                
+                <h4>ملفات تعريف الارتباط</h4>
+                <p>ملفات تعريف الارتباط هي ملفات صغيرة تحتوي على كمية محدودة من البيانات، وغالبًا ما تُستخدم كمعرّفات مجهولة الهوية. يتم إرسالها إلى متصفحك من مواقع الويب التي تزورها وتُخزن في الذاكرة الداخلية لجهازك.</p>
+                <p>لا يستخدم تطبيقنا ملفات تعريف الارتباط مباشرةً، ولكن قد يدمج خدمات طرف ثالث تستخدم ملفات تعريف الارتباط لجمع المعلومات وتحسين خدماتها. يُمكنك قبول أو رفض هذه الملفات، ولكن في حالة الرفض، قد يتم تقييد بعض وظائف الخدمة.</p>
+                
+                <h4>مزوّدو الخدمات من الأطراف الثالثة</h4>
+                <p>قد نستعين بشركات وأفراد تابعين لأطراف ثالثة من أجل:</p>
+                <ul>
+                    <li>تسهيل تقديم الخدمة</li>
+                    <li>تقديم الخدمة نيابةً عنا</li>
+                    <li>تنفيذ الخدمات ذات الصلة بالتطبيق</li>
+                    <li>تحليل كيفية استخدام التطبيق</li>
+                </ul>
+                <p>يُسمح لهذه الأطراف بالوصول إلى معلوماتك الشخصية فقط لتنفيذ هذه المهام نيابةً عنا، وهي ملزمة بعدم الكشف عنها أو استخدامها لأي أغراض أخرى.</p>
+                
+                <h4>الأمان</h4>
+                <p>نحن نولي أهمية كبيرة لحماية بياناتك الشخصية، ونعتمد تدابير أمنية تجارية مقبولة لحمايتها. ومع ذلك، لا توجد طريقة نقل عبر الإنترنت أو تخزين إلكتروني آمنة بنسبة 100٪، لذلك لا يمكننا ضمان الحماية المطلقة.</p>
+                
+                <h4>الروابط إلى مواقع أخرى</h4>
+                <p>قد تحتوي خدمتنا على روابط لمواقع إلكترونية أخرى. عند النقر على رابط طرف ثالث، سيتم توجيهك إلى موقعه. نحن غير مسؤولين عن سياسات الخصوصية أو ممارسات هذه المواقع، ونوصي بمراجعة سياسات الخصوصية الخاصة بها.</p>
+                
+                <h4>حماية الأطفال</h4>
+                <p>خدمتنا غير مخصصة للأطفال دون سن 13 عامًا. لا نقوم بجمع معلومات شخصية عن عمد من أي شخص دون هذا السن. إذا اكتشفنا أن طفلاً دون 13 عامًا قد زوّدنا بمعلومات شخصية، فسنقوم بحذفها فورًا من خوادمنا.</p>
+                
+                <h4>تعديلات سياسة الخصوصية</h4>
+                <p>قد نقوم بتحديث سياسة الخصوصية هذه في أي وقت. نوصيك بمراجعة هذه الصفحة بشكل دوري للاطلاع على أي تغييرات. سيتم نشر أي تحديثات هنا.</p>
+                
+                <h4>التواصل</h4>
+                <p>إذا كانت لديك أي أسئلة أو اقتراحات بخصوص سياسة الخصوصية الخاصة بنا، لا تتردد في الاتصال بنا عبر البريد الإلكتروني: 📧 Contact@agriedge.ma</p>
+            `
+        };
+
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        const lang = getQueryParam('lang') || 'en';
+        
+        // Set RTL direction for Arabic
+        if (lang === 'ar') {
+            document.body.setAttribute('dir', 'rtl');
+            document.querySelector('.container').style.textAlign = 'right';
+        } else {
+            document.body.setAttribute('dir', 'ltr');
+            document.querySelector('.container').style.textAlign = 'left';
+        }
+
+        document.getElementById('policy-content').innerHTML = policies[lang] || policies['en'];
+        
+        // Highlight current language button
+        document.querySelector(`a[href="?lang=${lang}"]`)?.classList.add('active');
+
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.createElement('div');
+            particlesContainer.className = 'particles';
+            document.body.appendChild(particlesContainer);
+
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + 'vw';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Initialize particles
+        createParticles();
+    </script>
+</body>
+</html>
