@@ -185,7 +185,7 @@
                 <a href="?lang=ar" class="btn btn-outline-primary">العربية</a>
             </div>
         </div>
-        <h2 class="text-center">Privacy Policy - AquaEdge</h2>
+        <h2 class="text-center" id="policy-title"></h2>
         <hr>
         <div id="policy-content"></div>
     </div>
@@ -329,6 +329,12 @@
             `
         };
 
+        const titles = {
+            en: "Privacy Policy - ET0Edge",
+            fr: "Politique de Confidentialité - ET0Edge",
+            ar: "سياسة الخصوصية - ET0Edge"
+        };
+
         function getQueryParam(param) {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get(param);
@@ -345,6 +351,8 @@
             document.querySelector('.container').style.textAlign = 'left';
         }
 
+        // Set the title and content based on language
+        document.getElementById('policy-title').innerHTML = titles[lang] || titles['en'];
         document.getElementById('policy-content').innerHTML = policies[lang] || policies['en'];
         
         // Highlight current language button
